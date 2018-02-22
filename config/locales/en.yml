@@ -20,4 +20,31 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      apptitle: "Ruby on Rails Tutorial Sample App"
+  static_pages:
+    home:
+      title: "Home"
+      body1: "This is the home page for the"
+      body2: "sample application."
+      title_tut: "Ruby on Rails Tutorial"
+      url_tut: "http://www.railstutorial.org/"
+    about:
+      title: "About"
+      body: "This is the sample application for the tutorial."
+      title_tut: "Ruby on Rails Tutorial"
+      url_tut: "http://www.railstutorial.org/"
+    help:
+      title: "Help"
+      body1: "Get help on the Ruby on Rails Tutorial at the"
+      title_help: "Rails Tutorial help section"
+      body2: "To get help on this sample app, see the"
+      title_tut: "Ruby on Rails Tutorial"
+      url_tut: "http://www.railstutorial.org/book"
+      url_help: "http://www.railstutorial.org/help"
+    contact:
+      title: "Contact"
+      body: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      title_contact: "contact page"
+      url_contact: "http://www.railstutorial.org/contact"
