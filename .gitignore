@@ -18,6 +18,7 @@
 !/tmp/.keep
 
 # Ignore Byebug command history file.
+
 .byebug_history
 .rubocop.yml
 .rubocop_disabled.yml
