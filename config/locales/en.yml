@@ -23,13 +23,33 @@ en:
   layouts:
     application:
       apptitle: "Ruby on Rails Tutorial Sample App"
+    header:
+      title_logo: "sample app"
+      home: "Home"
+      log_in: "Log in"
+      help: "Help"
+    footer:
+      the: "The"
+      title_tut: "Ruby on Rails Tutorial"
+      url_tut: "http://www.railstutorial.org/"
+      by: "by"
+      url_author: "http://www.michaelhartl.com/"
+      title_author: "Michael Hartl"
+      about: "About"
+      contact: "Contact"
+      url_news: "http://news.railstutorial.org/"
+      title_news: "News"
   static_pages:
     home:
       title: "Home"
+      home_welcome: "Welcome to the Sample App"
       body1: "This is the home page for the"
       body2: "sample application."
       title_tut: "Ruby on Rails Tutorial"
       url_tut: "http://www.railstutorial.org/"
+      sign_up: "Sign up now!"
+      rails_logo: "Rails logo"
+      url_tut: "http://rubyonrails.org/"
     about:
       title: "About"
       body: "This is the sample application for the tutorial."
@@ -48,3 +68,7 @@ en:
       body: "Contact the Ruby on Rails Tutorial about the sample app at the"
       title_contact: "contact page"
       url_contact: "http://www.railstutorial.org/contact"
+  users:
+    new:
+      sign_up: "Sign up"
+      p_content: "This will be a signup page for new users."
