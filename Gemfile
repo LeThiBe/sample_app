@@ -9,6 +9,8 @@ gem "rubocop", "~> 0.46.0", require: false
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
 gem "rails", "~> 5.0.6"
 # Use sqlite3 as the database for Active Record
+gem "config"
+gem "bcrypt", "3.1.11"
 gem "bootstrap-sass", "3.3.7"
 gem "sqlite3"
 # Use Puma as the app server
