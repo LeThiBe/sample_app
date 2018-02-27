@@ -72,3 +72,8 @@ en:
     new:
       sign_up: "Sign up"
       p_content: "This will be a signup page for new users."
+    creat:
+      body_create: "Welcome to the Sample App!"
+  shared:
+    error_messages:
+      error: "error"

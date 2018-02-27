@@ -1,4 +1,5 @@
 user:
-  email_length:255
-  password_length:6
-  name_length:50
+  email_length: 255
+  password_length: 6
+  name_length: 50
+  size: 80
