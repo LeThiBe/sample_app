@@ -4,11 +4,11 @@
 #
 # To use the locales, use `I18n.t`:
 #
-#     I18n.t 'hello'
+#     I18n.t "hello"
 #
 # In views, this is aliased to just `t`:
 #
-#     <%= t('hello') %>
+#     <%= t("hello") %>
 #
 # To use a different locale, set it with `I18n.locale`:
 #
@@ -28,6 +28,11 @@ en:
       home: "Home"
       log_in: "Log in"
       help: "Help"
+      user: "User"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
+      account: "Account"
     footer:
       the: "The"
       title_tut: "Ruby on Rails Tutorial"
@@ -72,8 +77,18 @@ en:
     new:
       sign_up: "Sign up"
       p_content: "This will be a signup page for new users."
-    creat:
+      create_acc: "Create my account"
+      confirm: "Confirmation"
+    create:
       body_create: "Welcome to the Sample App!"
   shared:
     error_messages:
-      error: "error"
+    form_error: "The form contains"
+    error: "error"
+  sessions:
+    new:
+      log_in: "Log in"
+      sign_up: "Sign up now!"
+      new: New user?
+    create:
+      invalid: "Invalid email/password combination"
