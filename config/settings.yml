@@ -3,3 +3,5 @@ user:
   password_length: 6
   name_length: 50
   size: 80
+session:
+  value: 1
