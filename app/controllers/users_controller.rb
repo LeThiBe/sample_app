@@ -1,7 +1,14 @@
 class UsersController < ApplicationController
-  def show
-    @user = User.find_by id: params[:id]
+  before_action :logged_in_user, except: %i(show new create)
+  before_action :load_user, except: %i(index new create)
+  before_action :correct_user, only: %i(edit update)
+  before_action :admin_user, only: :destroy
+
+  def index
+    @users = User.paginate(page: params[:page])
   end
+
+  def show; end
 
   def new
     @user = User.new
@@ -18,9 +25,32 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @user.update_attributes user_params
+      flash[:success] = t ".profile"
+      redirect_to @user
+    else
+      flash.now[:danger] = t "user.update.fail"
+      render "edit"
+    end
+  end
+
+  def destroy
+    @user.destroy
+    flash[:success] = "User deleted"
+    redirect_to users_url
+  end
+
   private
 
   def user_params
     params.require(:user).permit :name, :email, :password, :password_confirmation, :name
+  end
+
+  def load_user
+    @user = User.find_by id: params[:id]
+    @user || render(file: "public/404.html", status: 404, layout: true)
   end
 end
