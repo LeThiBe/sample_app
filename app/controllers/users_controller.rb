@@ -17,9 +17,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".body_create"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "users.create.check"
+      redirect_to root_url
     else
       render :new
     end
@@ -32,7 +32,7 @@ class UsersController < ApplicationController
       flash[:success] = t ".profile"
       redirect_to @user
     else
-      flash.now[:danger] = t "user.update.fail"
+      flash.now[:danger] = t "users.update.fail"
       render "edit"
     end
   end

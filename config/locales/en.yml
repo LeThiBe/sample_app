@@ -81,6 +81,7 @@ en:
       confirm: "Confirmation"
     create:
       body_create: "Welcome to the Sample App!"
+      check: "Please check your email to activate your account."
     edit:
       title: "Edit user"
       update: "Update your profile"
@@ -108,3 +109,18 @@ en:
       remember: "Remember me on this computer"
     create:
       invalid: "Invalid email/password combination"
+      check_mail: "Account not activated.Check your email for the activation link."
+  user_mailer:
+    account_activation:
+      title: "Sample App"
+      hi: "Hi "
+      welcom: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+  account_activation:
+    activated: "Account activated!"
+    invalid: "Invalid activation link"
+  mailers:
+    user_mailer:
+      activation: "Account activation"
+      greeting: "Hi"
+      mail: "to@example.org"
