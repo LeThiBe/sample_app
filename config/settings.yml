@@ -3,5 +3,6 @@ user:
   password_length: 6
   name_length: 50
   size: 80
+  user_size: 50
 session:
   value: 1

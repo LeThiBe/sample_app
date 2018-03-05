@@ -81,10 +81,25 @@ en:
       confirm: "Confirmation"
     create:
       body_create: "Welcome to the Sample App!"
+    edit:
+      title: "Edit user"
+      update: "Update your profile"
+      save: "Save changes"
+      change: "Change"
+    index:
+      title: "All users"
+    update:
+      profile: "Profile updated"
+      fail: "Updating user information failed"
+    logged_in_user:
+      please: "Please log in."
+    user:
+      delete: "delete"
+      sure: "You sure?"
   shared:
     error_messages:
-    form_error: "The form contains"
-    error: "error"
+      form_error: "The form contains"
+      error: "error"
   sessions:
     new:
       log_in: "Log in"
