@@ -4,5 +4,6 @@ user:
   name_length: 50
   size: 80
   user_size: 50
+  time: 2
 session:
   value: 1

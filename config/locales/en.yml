@@ -107,6 +107,7 @@ en:
       sign_up: "Sign up now!"
       new: "New user?"
       remember: "Remember me on this computer"
+      forgot: "(forgot password)"
     create:
       invalid: "Invalid email/password combination"
       check_mail: "Account not activated.Check your email for the activation link."
@@ -116,6 +117,18 @@ en:
       hi: "Hi "
       welcom: "Welcome to the Sample App! Click on the link below to activate your account:"
       activate: "Activate"
+    password_reset_text:
+      content1: "To reset your password click the link below:"
+      content2: "This link will expire in two hours."
+      content3: "If you did not request your password to be reset, please ignore this email and
+                 your password will stay as it is."
+    password_reset:
+      h1: "Password reset"
+      content_p1: "To reset your password click the link below:"
+      title_url: "Reset password"
+      content_p2: "This link will expire in two hours."
+      content_p3: "If you did not request your password to be reset, please ignore this email and
+your password will stay as it is."
   account_activation:
     activated: "Account activated!"
     invalid: "Invalid activation link"
@@ -124,3 +137,21 @@ en:
       activation: "Account activation"
       greeting: "Hi"
       mail: "to@example.org"
+      password_reset: "Password reset"
+  password_resets:
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+    create:
+      messages: "Email sent with password reset instructions"
+      not_found: "Email address not found"
+    edit:
+      title: "Reset password"
+      confirmation: "Confirmation"
+      submit: "Update password"
+    update:
+      error: "can't be empty"
+      success: "Password has been reset."
+    check_expiration:
+      expired: "Password reset has expired."
+
