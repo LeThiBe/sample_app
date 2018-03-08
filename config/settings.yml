@@ -7,3 +7,11 @@ user:
   time: 2
 session:
   value: 1
+microposts:
+  size: 50
+  picture_size: 5
+shared:
+  size: 50
+javascripts:
+  i18n:
+    size: 2

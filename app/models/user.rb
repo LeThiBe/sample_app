@@ -9,6 +9,7 @@ class User < ApplicationRecord
   validates :name, presence: true, length: {maximum: Settings.user.name_length}
   before_save{email.downcase!}
   has_secure_password
+  has_many :microposts, dependent: :destroy
 
   class << self
     def digest string
@@ -29,7 +30,7 @@ class User < ApplicationRecord
 
   # Returns true if the given token matches the digest.
   def authenticated? attribute, token
-    digest = send("#{attribute}_digest")
+    digest = send "#{attribute}_digest"
     return false if digest.nil?
     BCrypt::Password.new(digest).is_password?(token)
   end
@@ -65,6 +66,10 @@ class User < ApplicationRecord
   # Returns true if a password reset has expired.
   def password_reset_expired?
     reset_sent_at < Settings.user.times.hours.ago
+  end
+
+  def feed
+    Micropost.where("user_id = ?", id)
   end
 
   private
