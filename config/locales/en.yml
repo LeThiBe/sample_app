@@ -103,6 +103,17 @@ en:
       sure: "You sure?"
     show:
       microposts: "Microposts"
+    unfollow:
+      submit: "Unfollow"
+    follow:
+      submit: "Follow"
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
+    show_follow:
+      link_profile: "view my profile"
+      microposts: "Microposts:"
   shared:
     error_messages:
       form_error: "The form contains"
@@ -137,6 +148,9 @@ en:
       content2: "This link will expire in two hours."
       content3: "If you did not request your password to be reset, please ignore this email and
                  your password will stay as it is."
+    stats:
+      following: "following"
+      followers: "followers"
     password_reset:
       h1: "Password reset"
       content_p1: "To reset your password click the link below:"

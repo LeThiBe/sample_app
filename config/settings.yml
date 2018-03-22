@@ -10,6 +10,7 @@ session:
 microposts:
   size: 50
   picture_size: 5
+  maximum: 140
 shared:
   size: 50
 javascripts:
